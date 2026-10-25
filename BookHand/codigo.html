@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de acceso | CB Historias</title>
+    <link rel="stylesheet" href="assets/estilos.css">
+    <script defer src="js/app.js"></script>
+    <link rel="icon" href="imagenes/book.png">
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="login.html">
+        <span class="brand-mark">✦</span>
+        Historias entre mundos
+    </a>
+
+    <nav>
+        <a href="biblioteca.html">Biblioteca</a>
+        <a href="login.html">Mi espacio</a>
+    </nav>
+</header>
+
+<main class="code-wrap wrap">
+    <a class="back-link" href="login.html">← Volver</a>
+
+    <section class="form-card code-card">
+        <div class="form-symbol code-symbol">⌘</div>
+
+        <span class="eyebrow">ACCESO ESPECIAL</span>
+
+        <h1>
+            Tu código abre<br>
+            una nueva historia.
+        </h1>
+
+        <p>Escribe el código que recibiste para continuar.</p>
+
+        <form id="codeForm">
+            <label for="accessCode">Código de acceso</label>
+
+            <input
+                id="accessCode"
+                class="code-input"
+                type="text"
+                placeholder="TOMAS-2026"
+                maxlength="30"
+                required
+            >
+
+            <button class="btn primary full" type="submit">
+                Validar código →
+            </button>
+
+            <p id="codeMessage" class="form-message"
+               role="status"></p>
+        </form>
+
+        <small class="fine-print">
+            Ejemplo: <b>TOMAS-2026</b>.
+            Esta validación inicial no es segura para ventas reales.
+        </small>
+    </section>
+</main>
+
+<footer>
+    Descubre, aprende y comparte <span>✦</span>
+</footer>
+
+</body>
+</html>

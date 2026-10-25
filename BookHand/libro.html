@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB Historias</title>
+    <link rel="stylesheet" href="assets/estilos.css">
+    <link rel="icon" href="imagenes/book.png">
+    
+</head>
+<body class="reading-page">
+
+<header class="topbar">
+    <a class="brand" href="login.html">
+        <span class="brand-mark">✦</span>
+        Historias entre mundos
+    </a>
+
+    <nav>
+        <a href="biblioteca.html">Biblioteca</a>
+        <a href="login.html">Mi espacio</a>
+    </nav>
+</header>
+
+<main class="reader wrap">
+
+    <div class="reader-heading">
+        <div>
+            <span class="eyebrow">LIBRO INTERACTIVO</span>
+            <h1>La historia del marciano Tomás</h1>
+            <p>Haz clic en la portada para abrir el libro.</p>
+        </div>
+
+        <a class="text-link" href="biblioteca.html">
+            ← Biblioteca
+        </a>
+    </div>
+
+    <div class="book-stage">
+        <div class="book-shell">
+
+           
+<button class="book book-cover interactive-cover"
+        id="coverButton"
+        aria-label="Abrir el libro">
+
+    <img
+        src="imagenes/WhatsApp Image 2026-10-17 at 12.55.38 PM.jpeg"
+        alt="Portada de La historia del marciano Tomás"
+        class="cover-image"
+    >
+
+    <span class="open-hint">
+        Haz clic para abrir ↗
+    </span>
+
+</button>
+
+
+            <section class="open-book" id="openBook"
+                     aria-live="polite" hidden>
+
+                <div class="paper page-left">
+                    <span class="page-label">
+                        LA HISTORIA DEL MARCIANO TOMÁS
+                    </span>
+
+                    <div class="page-decoration">✦</div>
+
+                    <h2 id="pageTitle"></h2>
+                    <p id="pageText"></p>
+
+                    <span class="page-number" id="pageNumber">
+                        1
+                    </span>
+                </div>
+
+                <div class="paper page-right">
+                    <span class="page-label">
+                        UN VIAJE ENTRE DOS MUNDOS
+                    </span>
+
+                    <div class="chapter-mark">✧</div>
+
+                    <p id="pageTextRight"></p>
+
+                    <span class="page-number" id="pageNumberRight">
+                        2
+                    </span>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+   
+<div class="language-selector">
+    <p class="language-title">Idioma / Language</p>
+
+    <div class="language-options">
+        <button type="button" class="language-card spanish active"
+                data-language="es">
+            <span class="language-illustration" aria-hidden="true">🚀</span>
+            <span class="language-name">Español</span>
+            <span class="language-arrow">→</span>
+        </button>
+
+        <button type="button" class="language-card english"
+                data-language="en">
+            <span class="language-illustration" aria-hidden="true">⚽</span>
+            <span class="language-name">English</span>
+            <span class="language-arrow">→</span>
+        </button>
+    </div>
+</div>
+
+    <div class="reader-controls">
+        <button class="btn secondary" id="prevPage" disabled>
+            ← Anterior
+        </button>
+
+        <span id="pageStatus">Portada</span>
+
+        <button class="btn secondary" id="backToCover">
+            ↩ Portada
+        </button>
+
+        <button class="btn primary" id="nextPage">
+            Abrir libro →
+        </button>
+    </div>
+
+    <p class="reader-tip">
+        <span>✦</span>
+        Cada capítulo descubre una parte nueva de la aventura.
+    </p>
+
+</main>
+
+<footer>
+    Gracias por leer <span>✦</span>
+</footer>
+<script src="js/book-en.js"></script>
+<script src="js/book.js"></script>
+</body>
+</html>
